@@ -5,12 +5,21 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
+// var mongoose = require('mongoose');
 
 var main = require('./routes/main');
 var users = require('./routes/users');
 var webhook = require('./routes/webhook/webhook');
 
 var app = express();
+
+// var connectionString = process.env.MONGODB_URI || 'mongodb://localhost/ubae-dev'
+
+// mongoose.connect(connectionString);
+// mongoose.connection.on('error', console.error.bind(console, 'connection error:'));
+// mongoose.connection.once('open', function() {
+//   console.log('Database connected.')
+// });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
