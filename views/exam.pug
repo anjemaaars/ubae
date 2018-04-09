@@ -10,10 +10,10 @@ block content
       th Interval
       th Start
       th End
-    tr
-      each val in data
+    each val in data
+      tr
         th= val.date
         th= val.scheme
-        th= val.interval
+        th= val.interval + ' min.'
         th= val.start
         th= val.end
