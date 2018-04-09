@@ -8,6 +8,7 @@ var sassMiddleware = require('node-sass-middleware');
 
 var main = require('./routes/main');
 var users = require('./routes/users');
+var webhook = require('./routes/webhook/webhook');
 
 var app = express();
 
@@ -31,6 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', main);
 app.use('/users', users);
+app.use('/webhook', webhook);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
