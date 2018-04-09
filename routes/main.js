@@ -6,10 +6,11 @@ router.get('/', function(req, res, next) {
 
   var resource = {
     title: 'UBAE',
-    url: process.env.WEB_PAGE_URL
+    url: process.env.WEB_PAGE_URL || 'localhost:3000',
+    desc: 'University of Baguio Assistive Extension'
   };
 
-  res.render('index', resource);
+  res.render('main', resource);
 });
 
 module.exports = router;
