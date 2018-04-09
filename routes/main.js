@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
 
   var resource = {
-    title: 'Angel Bae',
+    title: 'Ubae',
     url: process.env.WEB_PAGE_URL || 'localhost:3000',
     desc: 'University of Baguio Assistive Extension'
   };

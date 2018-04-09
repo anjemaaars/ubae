@@ -18,7 +18,7 @@ exports.menu = function () {
         }, {
             type: "web_url",
             title: "UBAE Development",
-            url: process.env.WEB_PAGE_URL + '/route-name',
+            url: "http://ubae-v1.herokuapp.com/about",
             webview_height_ratio: "full"
         }]
     }]
