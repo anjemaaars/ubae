@@ -1,5 +1,6 @@
 {
   "name": "ubae",
+  "description": "University of Baguio Assistive Extension",
   "author": "Edgar Allan Macatulad",
   "version": "1.0.0",
   "private": true,
