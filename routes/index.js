@@ -3,7 +3,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+
+  var web_page = process.env.WEB_PAGE_URL;
+
+  res.render('index', { title: 'Express', url: web_page });
 });
 
 module.exports = router;
