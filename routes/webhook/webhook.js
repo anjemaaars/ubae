@@ -99,7 +99,7 @@ function handlePostback(sender_psid, received_postback) {
         response = msg.processMessage('Welcome to the UBAE chatbot');
     } else if (payload === 'VIEW_EVENTS_EXAM') {
         response = msg.genericMsg()
-    }
+    } 
     // Send the message to acknowledge the postback
     facebook.callSendAPI(sender_psid, response);
 }

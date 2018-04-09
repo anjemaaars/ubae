@@ -42,16 +42,7 @@ exports.processAttachment = function (attachment_url) {
                 elements: [{
                     title: 'I recieved an attachment',
                     subtitle: 'Tap a button to answer.',
-                    image_url: attachment_url,
-                    buttons: [{
-                        type: 'postback',
-                        title: 'Yes!',
-                        payload: 'yes',
-                    }, {
-                        type: 'postback',
-                        title: 'No!',
-                        payload: 'no',
-                    }],
+                    image_url: attachment_url
                 }]
             }
         }
