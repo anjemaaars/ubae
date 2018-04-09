@@ -13,4 +13,9 @@ router.get('/', function(req, res, next) {
   res.render('main', resource);
 });
 
+/* GET route page */
+router.get('/route-name', function(req,res) {
+  res.render('route-name');
+});
+
 module.exports = router;
