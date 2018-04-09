@@ -29,4 +29,5 @@ node_modules
 # Debug log from npm
 npm-debug.log
 
-.DS_Sore
+.DS_Store
+public/.DS_Store

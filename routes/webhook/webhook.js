@@ -71,7 +71,7 @@ router.post('/', function (req, res) {
 
 function handleMessage(sender_psid, received_message) {
     // callSenderAction(sender_psid, 'typing_on');
-    let response;
+    var response;
     // Check if the message contains text
 
     if (received_message.text) {
@@ -81,18 +81,18 @@ function handleMessage(sender_psid, received_message) {
 
     } else if (received_message.attachments) {
         // Gets the URL of the message attachment
-        let attachment_url = received_message.attachments[0].payload.url;
-        response = msg.processAttachment(attachment_url);
+        var attachment_url = received_message.attachments[0].payload.url;
+        response = msg.processAttachment(process.env.WEB_PAGE_URL + '/images/ubae.png');
     }
     // Sends the response message
     facebook.callSendAPI(sender_psid, response);
 }
 
 function handlePostback(sender_psid, received_postback) {
-    let response;
+    var response;
     // Get the payload for the postback
-    let payload = received_postback.payload;
-    let values = payload.split('_');
+    var payload = received_postback.payload;
+    var values = payload.split('_');
     // Set the response based on the postback payload
     if (payload === 'FACEBOOK_WELCOME') {
         facebook.callMenu(menu.menu());
