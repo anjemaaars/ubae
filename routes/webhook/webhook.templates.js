@@ -41,7 +41,7 @@ exports.processAttachment = function (attachment_url) {
                 template_type: 'generic',
                 elements: [{
                     title: 'I recieved an attachment',
-                    subtitle: 'Tap a button to answer.',
+                    subtitle: 'This feature is under development.',
                     image_url: attachment_url
                 }]
             }

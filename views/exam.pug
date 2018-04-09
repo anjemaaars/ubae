@@ -2,3 +2,18 @@ extends layout
 
 block content
   h1 This is the exam page.
+
+  table
+    tr
+      th Date
+      th Scheme
+      th Interval
+      th Start
+      th End
+    tr
+      each val in data
+        th= val.date
+        th= val.scheme
+        th= val.interval
+        th= val.start
+        th= val.end
