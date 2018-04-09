@@ -14,8 +14,18 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET route page */
-router.get('/route-name', function(req,res) {
-  res.render('route-name');
+router.get('/examination/first', function(req,res) {
+  res.render('exam');
+});
+
+/* GET route page */
+router.get('/examination/midterm', function(req,res) {
+  res.render('exam');
+});
+
+/* GET route page */
+router.get('/examination/final', function(req,res) {
+  res.render('exam');
 });
 
 module.exports = router;

@@ -15,17 +15,17 @@ exports.genericMsg = function () {
                     subtitle: 'Which one do you need?',
                     // image_url: 'http://www.ubaguio.edu/index.php/resources-offices/admissions-and-records-center-arc.html',
                     buttons: [{
-                        type: 'postback',
-                        title: 'First Grading Exam',
-                        payload: 'EVENT_EXAM_FIRST'
+                        type: 'web_url',
+                        url: process.env.WEB_PAGE_URL + '/examination/first',
+                        title: 'First Grading Exam'
                     }, {
-                        type: 'postback',
-                        title: 'Midterm Exam',
-                        payload: 'EVENT_EXAM_MIDTERM'
+                        type: 'web_url',
+                        url: process.env.WEB_PAGE_URL + '/examination/midterm',
+                        title: 'Midterm Exam'
                     }, {
-                        type: 'postback',
-                        title: 'Final Exam',
-                        payload: 'EVENT_EXAM_FINAL'
+                        type: 'web_url',
+                        url: process.env.WEB_PAGE_URL + '/examination/final',
+                        title: 'Final Exam'
                     }],
                 }]
             }
